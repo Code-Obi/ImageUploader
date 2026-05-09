@@ -34,7 +34,7 @@ if (isset($_FILES["Picture"])) {
     $fileName = $_FILES["Picture"]["name"];
     $fileTmp = $_FILES["Picture"]["tmp_name"];
 
-    $path = "uploads/" . $fileName;
+    $path = "UploadedFiles/" . $fileName;
 
     if (move_uploaded_file($fileTmp, $path)) {
         echo "Image Uploaded Successfully!";
